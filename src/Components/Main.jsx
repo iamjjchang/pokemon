@@ -4,10 +4,11 @@ import Pokeinfo from "./Pokeinfo";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
+
 const Main=()=>{
     const [pokeData,setPokeData]=useState([]);
     const [loading,setLoading]=useState(true);
-    const [url,setUrl]=useState("https://pokeapi.co/api/v2/pokemon/")
+    const [url,setUrl]=useState("https://pokeapi.jjblog.xyz/api/v2/pokemon/");
     const [nextUrl,setNextUrl]=useState();
     const [prevUrl,setPrevUrl]=useState();
     const [pokeDex,setPokeDex]=useState();
